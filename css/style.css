@@ -1,14 +1,19 @@
+html {
+    box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
+    box-sizing: inherit;
 }
 
 body {
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     width: 1440px;
     font-family: Roboto;
+    width: 100%;
 }
 
 .features {
@@ -18,19 +23,16 @@ body {
     text-align: center;
 }
 
-/* 
-.features-title>h2 {
-    margin: 0 auto;
-} */
 
 .features-title h2 {
     color: rgb(61, 79, 159);
     font-size: 10px;
     font-weight: 500;
     line-height: 12px;
-    letter-spacing: 10%;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     margin-bottom: 20px;
+    padding-left: 6px;
 }
 
 .features-title p {
@@ -41,6 +43,7 @@ body {
     letter-spacing: 0%;
     text-align: center;
     margin-bottom: 94px;
+    margin-top: 20px;
 }
 
 .features-cards-inner {
@@ -61,6 +64,7 @@ body {
     line-height: 16px;
     letter-spacing: 0%;
     text-align: center;
+    margin-top: 30px;
 }
 
 .features-cards-item p {
@@ -71,6 +75,7 @@ body {
     letter-spacing: 0%;
     text-align: center;
     width: 140px;
+    margin-top: 33px;
 }
 
 
@@ -126,13 +131,16 @@ body {
     min-height: 342px;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
 }
 
 .info-left-item-inner {
     margin-right: 90px;
     text-align: right;
     width: 260px;
+}
+
+.info-left-item-inner img {
+    padding-top: 65px;
 }
 
 .info-description {
@@ -146,6 +154,10 @@ body {
     font-weight: 400;
     line-height: 56px;
     letter-spacing: 3%;
+    margin-top: 21px;
+    padding-right: 3px;
+    margin-bottom: 19px;
+
 }
 
 .info-description p {
@@ -153,8 +165,8 @@ body {
     font-size: 18px;
     font-weight: 500;
     line-height: 21px;
-    letter-spacing: 3%;
-    text-indent: 30px;
+    letter-spacing: 0.03em;
+    text-indent: 20px;
 }
 
 .info-right-item {
@@ -168,6 +180,7 @@ body {
 
 .info-right-item-inner {
     margin-left: 90px;
+    padding-top: 22px;
 }
 
 .info-right-item-inner .info-description p,
@@ -177,6 +190,7 @@ body {
 
 .info-right-item-inner .info-description p {
     text-indent: 0;
+    width: 313px;
 }
 
 .resourses {
@@ -191,7 +205,7 @@ body {
     font-size: 10px;
     font-weight: 500;
     line-height: 12px;
-    letter-spacing: 10%;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
@@ -200,8 +214,9 @@ body {
     font-size: 24px;
     font-weight: 500;
     line-height: 28px;
-    letter-spacing: 0%;
+    letter-spacing: 0em;
     margin-bottom: 94px;
+    margin-top: 21px;
 }
 
 
@@ -209,6 +224,8 @@ body {
     display: flex;
     justify-content: center;
     gap: 67px;
+    padding-top: 34px;
+    padding-right: 7px;
 }
 
 .resourses-left-card {
@@ -217,6 +234,7 @@ body {
         "one one two"
         "one one three";
     gap: 14px;
+    margin-top: 29px;
 }
 
 .resourses-mg-1 {
@@ -233,26 +251,12 @@ body {
     height: 127px;
 }
 
-/* 
-.resourses-mg-1 img {
-    width: 100%;
-    height: 100%;
-}
-
-.resourses-mg-2 img,
-.resourses-mg-3 img {
-    width: 100%;
-    height: 100%;
-} */
-
 .resourses-mg-2 {
     grid-area: two;
-    /* background-image: url(../img/resourses-2.png); */
 }
 
 .resourses-mg-3 {
     grid-area: three;
-    /* background-image: url(../img/resourses-3.png); */
 
 }
 
@@ -276,8 +280,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
-    letter-spacing: 3%;
-    margin-bottom: 50px;
+    letter-spacing: 0.03em;
 }
 
 .button-resourses {
@@ -295,4 +298,5 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 82px;
 }
